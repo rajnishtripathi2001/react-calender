@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Poppins',sans-serif;
+}
+.main{
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calender-header-container{
+  display: flex;
+  margin-left: 39%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calender-month-year-container{
+  display: flex;
+  justify-content: space-between;
+  width: 365px;
+  margin-left: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.year-input-box{
+  width: 50px;
+}
+.table-container{
   display: flex;
   flex-direction: column;
+  width: 365px;
+  margin: 5%;
+}
+
+.table-header-container{
+  display: flex;
+  border-bottom: 1px solid #282c34;
+}
+
+.table-body-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.table-row-container{
+  display: flex;
+}
+
+.table-cell-container{
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  height: 50px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  color: #282c34;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.table-selected-cell-container{
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #282c34;
+  color: #f2f2f2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-cell-container:hover{
+  background-color: #282c34;
+  color: #f2f2f2;
+}
+
+.btns{
+  display: flex;
+  justify-content: space-between;
+  width: 365px;
+  margin: 5%;
+}
+
+.btns-Shell{
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
 }
